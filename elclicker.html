@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Clicker</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: gainsboro;
+        }
+
+        h1{
+            
+            font-family: sans-serif;
+            font-size: 4em;
+            color: black;
+            text-align: center;
+        }
+
+        .ahoy{
+            font-size: 2em;
+            font-family: cursive;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        #not{
+            display: none;
+            color: tomato;
+        }
+
+        #harold{
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="maire">
+        I am <span id="not">NOT</span> absolute.
+    </h1>
+    <p class="ahoy">Click the phrase above to reveal the truth.</p>
+
+    <img src="harold.png" alt="yeah sorry" id="harold" width="250" height="250">
+<script>
+
+    document.getElementsByClassName("maire")[0].addEventListener("click", () => {
+        
+        document.getElementById("not").style.display = "inline";
+        document.getElementById("harold").style.display = "block";
+
+
+    })
+</script>
+
+</body>
+</html>
