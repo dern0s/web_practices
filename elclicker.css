@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffefdb;
+}
+
+h1{
+    
+    font-family: "Open sans", sans-serif;
+    font-size: 4em;
+    color: #202224;
+    text-align: center;
+}
+
+.ahoy{
+    font-size: 2em;
+    font-family: "Itim", cursive;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#not{
+    display: none;
+    color: #065572;
+}
+
+#harold{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 1em;
+}

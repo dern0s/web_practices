@@ -7,76 +7,17 @@
     <title>El Clicker</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&display=swap" rel="stylesheet">
-
-    <style>
-    
-        *{
-            margin: 0;
-            padding: 0;
-        }
-
-        body{
-            width: 100vw;
-            height: 100vh;
-            background-color: #ffefdb;
-        }
-
-        h1{
-            
-            font-family: "Open sans", sans-serif;
-            font-size: 4em;
-            color: #202224;
-            text-align: center;
-        }
-
-        .ahoy{
-            font-size: 2em;
-            font-family: "Itim", cursive;
-            margin-top: 25px;
-            text-align: center;
-        }
-
-        #not{
-            display: none;
-            color: #065572;
-        }
-
-        #harold{
-            display: none;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 25px;
-            border-radius: 1em;
-        }
-    </style>
+<link rel="stylesheet" href="elclicker.css">
 </head>
 <body>
+    <!--Second refactor is to separate files from html-->
     <h1 class="maire">
         I am <span id="not">NOT</span> absolute.
     </h1>
     <p class="ahoy">Click the phrase above to reveal the truth.</p>
 
     <img src="harold.png" alt="yeah sorry" id="harold" width="250" height="250">
-<script>
-
-    //refactor one: group common code into reusable function
-    function changeDisplay(targetId, intendedStyle){
-        document.getElementById(targetId).style.display = intendedStyle;
-    }
-
-    document.getElementsByClassName("maire")[0].addEventListener("click", () => {
-        
-        changeDisplay("not", "inline");
-        //old way:
-        //document.getElementById("not").style.display = "inline";
-        
-        changeDisplay("harold", "block");
-        //old way:
-        //document.getElementById("harold").style.display = "block";
-
-
-    })
-</script>
+    <script src="elclicker.js"></script>
 
 </body>
 </html>
