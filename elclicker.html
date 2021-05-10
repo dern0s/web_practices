@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Clicker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&display=swap" rel="stylesheet">
+
     <style>
+    
         *{
             margin: 0;
             padding: 0;
@@ -14,27 +18,27 @@
         body{
             width: 100vw;
             height: 100vh;
-            background-color: gainsboro;
+            background-color: #ffefdb;
         }
 
         h1{
             
-            font-family: sans-serif;
+            font-family: "Open sans", sans-serif;
             font-size: 4em;
-            color: black;
+            color: #202224;
             text-align: center;
         }
 
         .ahoy{
             font-size: 2em;
-            font-family: cursive;
+            font-family: "Itim", cursive;
             margin-top: 25px;
             text-align: center;
         }
 
         #not{
             display: none;
-            color: tomato;
+            color: #065572;
         }
 
         #harold{
@@ -42,6 +46,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 25px;
+            border-radius: 1em;
         }
     </style>
 </head>
@@ -54,10 +59,20 @@
     <img src="harold.png" alt="yeah sorry" id="harold" width="250" height="250">
 <script>
 
+    //refactor one: group common code into reusable function
+    function changeDisplay(targetId, intendedStyle){
+        document.getElementById(targetId).style.display = intendedStyle;
+    }
+
     document.getElementsByClassName("maire")[0].addEventListener("click", () => {
         
-        document.getElementById("not").style.display = "inline";
-        document.getElementById("harold").style.display = "block";
+        changeDisplay("not", "inline");
+        //old way:
+        //document.getElementById("not").style.display = "inline";
+        
+        changeDisplay("harold", "block");
+        //old way:
+        //document.getElementById("harold").style.display = "block";
 
 
     })
