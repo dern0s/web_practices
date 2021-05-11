@@ -19,18 +19,12 @@ body{
     width: 16rem;
     height: 12rem;
     background-color: #660708;
-    /* position: absolute;
-    left: 50px;
-    top: 50px; */
     transition: 3s;
 }
 
 .shape02{
     width: 24rem;
     height: 24rem;
-    /* position: absolute;
-    left: 450px;
-    top:40px; */
     transition: 5s;
     background-color: #b1a7a6;
 }
