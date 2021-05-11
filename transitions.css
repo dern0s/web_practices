@@ -71,10 +71,10 @@ h1, p{
 
 h1{
     font-family: "Girassol", cursive;
-    /* color: #f5f3f4; */
+    font-size: 3rem;
 }
 
 p{
     font-family: "Dancing Script", cursive;
-    /* color: #f5f3f4; */
+    font-size: 2rem;
 }
