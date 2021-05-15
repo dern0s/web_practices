@@ -8,7 +8,7 @@ function changeDisplay(targetId, intendedStyle) {
 let harold = false;
 
 //here we add a click event into the header to change the page
-document.getElementsByClassName("maire")[0].addEventListener("click", () => {
+document.querySelector("#here").addEventListener("click", () => {
 
     //if harold image isn't displayed it turns it visible
     if (!harold) {
