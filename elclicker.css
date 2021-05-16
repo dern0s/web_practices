@@ -47,10 +47,20 @@ header{
     align-items: center;
     height: 3rem;    
 
-    padding-left: 3rem;
+    padding-left: 6rem;
     border: 1px solid #fff;
-    /* border-radius: 0px 0px 10px 10px; */
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
+}
+
+i{
+    color: #065572;
+    text-decoration: none;
+    transition: 2s;
+
+}
+
+i:hover{
+    color: #de1616;
 }
