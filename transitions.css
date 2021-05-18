@@ -55,20 +55,37 @@ body{
     width: 5rem;
     height: 5rem;
     background-color: #000;
-}
-
-h1, p{
-    color: #bfbfbf;
-    text-align: center;
-    padding-top: 1rem;
+    transform: skew(68deg);
 }
 
 h1{
-    font-family: "Girassol", cursive;
+    color: #bfbfbf;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'KoHo', sans-serif;
     font-size: 3rem;
 }
 
-p{
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem;
+
+header{
+    display: flex;
+    align-items: center;
+    height: 3rem;    
+
+    padding-left: 6rem;
+    border: 1px solid #222;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+i{
+    color: #ba181b;
+    text-decoration: none;
+    transition: 2s;
+
+}
+
+i:hover{
+    color: #bfbfbf;
 }
