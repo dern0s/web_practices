@@ -55,7 +55,7 @@ body{
     width: 5rem;
     height: 5rem;
     background-color: #000;
-    transform: skew(68deg);
+    transform: skew(60deg);
 }
 
 h1{
@@ -73,7 +73,7 @@ header{
     height: 3rem;    
 
     padding-left: 6rem;
-    border: 1px solid #222;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
