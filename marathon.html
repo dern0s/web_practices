@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon WDB</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="marathon.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <i class="material-icons">home</i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1>Race Registration!</h1>
+        <form action="complete.html">
+            <section>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" required>
+            </section>
+            <section>
+                <p>Select a Race:</p>
+                <input type="radio" name="race" id="FR" value="fun-race" checked>
+                <label for="FR">Fun Run 5k</label> <br />
+                <input type="radio" name="race" id="HM" value="half-marathon">
+                <label for="HM">Half Marathon</label><br />
+                <input type="radio" name="race" id="FM" value="full-marathon">
+                <label for="FM">Fun Run 5k</label><br />
+            </section>
+            <section>
+                <label for="age-group">Select Age Group: </label>
+                <select name="age" id="age-group">
+                    <option value="under-18">Under 18</option>
+                    <option value="between-18-30">18-30</option>
+                    <option value="between-30-50">30-50</option>
+                    <option value="over-50">50+</option>
+                </select>
+            </section>
+            <section>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd">
+            </section>
+            <button>Register!</button>
+
+
+        </form>
+    </main>
+</body>
+
+</html>
